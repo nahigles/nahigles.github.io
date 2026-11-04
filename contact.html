@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Nahia Iglesias Calvo</title>
+  <meta name="description" content="Contacta con Nahia Iglesias Calvo, desarrolladora de videojuegos.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Inicio">
+        <span class="logo__mark">NI</span>
+        <span>Nahia</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú"><span></span></button>
+      <div class="nav__menu" id="menu">
+        <nav class="nav__links" aria-label="Principal">
+          <a href="index.html" data-i18n="nav.games">Juegos</a>
+          <a href="about.html" data-i18n="nav.about">Sobre mí</a>
+          <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="nav__actions">
+          <div class="lang-switch" role="group" aria-label="Idioma / Hizkuntza / Language">
+            <button type="button" data-lang="es" aria-pressed="true" title="Castellano">ES</button>
+            <button type="button" data-lang="eu" aria-pressed="false" title="Euskara">EU</button>
+            <button type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+          </div>
+          <a class="btn btn--primary btn--sm" href="cv/Nahia_Iglesias_CV.pdf" data-cv download type="application/pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+            <span data-i18n="btn.cv">CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="pixel-label" data-i18n="contact.kicker">Player 2, ¿te unes?</p>
+        <h1 data-i18n="contact.title">Contacto</h1>
+        <p data-i18n="contact.intro">¿Tienes una vacante, un proyecto o quieres saber más sobre mi trabajo? Escríbeme y te respondo lo antes posible.</p>
+        <span class="availability"><i aria-hidden="true"></i><span data-i18n="contact.available">Disponible para trabajar</span></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div class="reveal">
+          <div class="mail-card">
+            <p class="pixel-label" data-i18n="contact.mailLabel">Correo electrónico</p>
+            <a class="mail" href="mailto:nayukinformatica@gmail.com">nayukinformatica@gmail.com</a>
+            <button class="btn btn--sm" type="button" data-copy="nayukinformatica@gmail.com">
+              <span data-i18n="contact.copy">Copiar correo</span>
+            </button>
+          </div>
+
+          <div class="link-cards">
+            <a class="link-card" href="https://www.linkedin.com/in/nahia-iglesias-calvo-a721733b9/" target="_blank" rel="noopener">
+              <span class="link-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/></svg></span>
+              <span><strong>LinkedIn</strong><span data-i18n="contact.linkedin">Mi perfil profesional</span></span>
+              <span class="link-card__arrow" aria-hidden="true">▶</span>
+            </a>
+            <a class="link-card" href="cv/Nahia_Iglesias_CV.pdf" data-cv download type="application/pdf">
+              <span class="link-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg></span>
+              <span><strong data-i18n="btn.downloadCv">Descargar CV</strong><span data-i18n="contact.cvPdf">Versión en PDF</span></span>
+              <span class="link-card__arrow" aria-hidden="true">▶</span>
+            </a>
+            <a class="link-card" href="https://github.com/nahigles" target="_blank" rel="noopener">
+              <span class="link-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span>
+              <span><strong>GitHub</strong><span data-i18n="contact.github">Código de mis proyectos</span></span>
+              <span class="link-card__arrow" aria-hidden="true">▶</span>
+            </a>
+            <a class="link-card" href="https://nayuk-6.itch.io" target="_blank" rel="noopener">
+              <span class="link-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="11" rx="3"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1" fill="currentColor"/><circle cx="18" cy="14" r="1" fill="currentColor"/></svg></span>
+              <span><strong>itch.io</strong><span data-i18n="contact.itch">Juega a mis juegos</span></span>
+              <span class="link-card__arrow" aria-hidden="true">▶</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- El formulario abre el programa de correo del visitante con el mensaje ya escrito.
+             Si más adelante quieres que llegue directamente, puedes usar un servicio como Formspree. -->
+        <form class="form-card reveal" id="contact-form" data-mail="nayukinformatica@gmail.com">
+          <h2 data-i18n="form.title">Envíame un mensaje</h2>
+          <p data-i18n="form.sub">Rellena el formulario y se abrirá tu correo con el mensaje listo para enviar.</p>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Nombre</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-company" data-i18n="form.company">Empresa / estudio</label>
+            <input id="f-company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="form.email">Tu correo</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.message">Mensaje</label>
+            <textarea id="f-msg" name="message" required></textarea>
+          </div>
+          <button class="btn btn--accent" type="submit" data-i18n="form.send">Enviar mensaje</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span data-year>2026</span> Nahia Iglesias Calvo · <span data-i18n="footer.made">Hecho a mano, sin cheats</span></p>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/nahia-iglesias-calvo-a721733b9/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/></svg></a>
+        <a href="https://github.com/nahigles" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></a>
+        <a href="https://nayuk-6.itch.io" target="_blank" rel="noopener" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="11" rx="3"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1" fill="currentColor"/><circle cx="18" cy="14" r="1" fill="currentColor"/></svg></a>
+        <a href="mailto:nayukinformatica@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,360 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamerPortfolio | Mi Portafolio de Videojuegos</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background-color: #0b0c10;
-        }
-        .font-orbitron {
-            font-family: 'Orbitron', sans-serif;
-        }
-        .neon-border {
-            box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
-            border: 1px solid rgba(0, 242, 254, 0.5);
-        }
-        .neon-text {
-            text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
-        }
-        .neon-btn:hover {
-            box-shadow: 0 0 20px rgba(255, 0, 127, 0.8);
-            background-color: #ff007f;
-            border-color: #ff007f;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahia Iglesias Calvo | Desarrolladora de videojuegos</title>
+  <meta name="description" content="Portfolio de Nahia Iglesias Calvo, desarrolladora de videojuegos especializada en juegos serios y experiencias educativas.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="text-gray-100 bg-[#07080d] selection:bg-[#ff007f] selection:text-white">
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
-    <!-- NAV BAR -->
-    <nav class="sticky top-0 z-50 bg-[#0b0c10]/90 backdrop-blur-md border-b border-gray-800 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="#" class="font-orbitron text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#4facfe] neon-text">
-                GAMER<span class="text-[#ff007f]">DEV</span>
+  <!-- ===== CABECERA ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Inicio">
+        <span class="logo__mark">NI</span>
+        <span>Nahia</span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú"><span></span></button>
+
+      <div class="nav__menu" id="menu">
+        <nav class="nav__links" aria-label="Principal">
+          <a href="index.html" aria-current="page" data-i18n="nav.games">Juegos</a>
+          <a href="about.html" data-i18n="nav.about">Sobre mí</a>
+          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="nav__actions">
+          <div class="lang-switch" role="group" aria-label="Idioma / Hizkuntza / Language">
+            <button type="button" data-lang="es" aria-pressed="true" title="Castellano">ES</button>
+            <button type="button" data-lang="eu" aria-pressed="false" title="Euskara">EU</button>
+            <button type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+          </div>
+          <a class="btn btn--primary btn--sm" href="cv/Nahia_Iglesias_CV.pdf" data-cv download type="application/pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+            <span data-i18n="btn.cv">CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="reveal">
+          <div class="hero__eyebrow pixel-label">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">NI</span>
+          </div>
+          <h1 class="hero__name">Nahia <span>Iglesias Calvo</span></h1>
+          <p class="hero__role" data-i18n="hero.role">Desarrolladora de videojuegos</p>
+          <p class="hero__desc" data-i18n="hero.desc">Desarrolladora de videojuegos enfocada en el uso de estos entornos interactivos como herramienta educativa y de apoyo. Tengo experiencia en tecnologías para el desarrollo de videojuegos y en diversos lenguajes de programación. Además, mis competencias en diseño, modelado, animación y sonido me han permitido colaborar en proyectos multidisciplinares, experiencias multiplataformas y entornos visuales.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/nahia-iglesias-calvo-a721733b9/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/></svg>
+              LinkedIn
             </a>
-            <div class="hidden md:flex space-x-8 font-semibold tracking-wider uppercase text-sm">
-                <a href="#proyectos" class="hover:text-[#00f2fe] transition-colors">Mis Juegos</a>
-                <a href="#habilidades" class="hover:text-[#00f2fe] transition-colors">Skills</a>
-                <a href="#experiencia" class="hover:text-[#00f2fe] transition-colors">Trayectoria</a>
-                <a href="#contacto" class="hover:text-[#00f2fe] transition-colors">Contacto</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="relative overflow-hidden py-24 md:py-36 px-6 border-b border-gray-900">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(79,172,254,0.12)_0,transparent_60%)]"></div>
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="font-orbitron inline-block bg-gray-900/80 text-[#00f2fe] text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full border border-[#00f2fe]/30 mb-6">
-                Game Developer & Designer
-            </span>
-            <h1 class="font-orbitron text-5xl md:text-7xl font-black tracking-tight text-white mb-6 uppercase">
-                Creando mundos.<br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#ff007f]">
-                    Forjando Experiencias.
-                </span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-                Especializado en mecánicas fluidas, diseño de niveles inmersivos y optimización de código. Dando vida a ideas interactivas desde el prototipo hasta el lanzamiento.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#proyectos" class="w-full sm:w-auto font-orbitron text-center bg-transparent border-2 border-[#00f2fe] text-[#00f2fe] px-8 py-3 rounded-none font-bold uppercase tracking-wider text-sm transition-all duration-300 neon-btn">
-                    Ver Proyectos
-                </a>
-                <a href="#contacto" class="w-full sm:w-auto font-orbitron text-center bg-gray-900 text-gray-300 hover:text-white px-8 py-3 rounded-none font-bold uppercase tracking-wider text-sm border border-gray-800 hover:border-gray-700 transition-all">
-                    Trabajemos Juntos
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- PROYECTOS / PORTFOLIO -->
-    <section id="proyectos" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="mb-12">
-            <h2 class="font-orbitron text-3xl md:text-4xl font-black uppercase tracking-wide">
-                <span class="text-[#00f2fe]">//</span> Mis Lanzamientos
-            </h2>
-            <p class="text-gray-400 text-sm md:text-base mt-2">Selección de títulos desarrollados de forma independiente y en equipo.</p>
+            <a class="btn" href="cv/Nahia_Iglesias_CV.pdf" data-cv download type="application/pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+              <span data-i18n="btn.downloadCv">Descargar CV</span>
+            </a>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Juego 1 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/MisionColombia3.png');">
-                        <!-- Placeholder visual representativo -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#ff007f] opacity-80 group-hover:scale-110 transition-transform duration-300"> </span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"> </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Unity 3D</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">C#</span>
-                            <!--span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Steam</span-->
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">Mision Colombia</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Juego serio para entrenar la capacidad de planificación en niños y adolescentes con TDAH. Un juego de planificación de trayectos de un trasportista con temática basada en Colombia. Diseñé, desarrollé y analicé los resultados obtenidos de las pruebas realizadas en 50 niños con TDAH con este videojuego.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://github.com/nahigles/jsonToCsv_TFG/blob/main/MemoriaTFG/NahiaIglesiasTFG.pdf" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Investigación TFG
-                    </a>
-                    <a href="https://youtu.be/OzEE3vw6ORw?si=-FIHFUuJVwKS0b9q" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver en Youtube
-                    </a>
-                </div>
+        <aside class="player-card reveal" aria-label="Nahia Iglesias Calvo">
+          <div class="player-card__top">
+            <span class="pixel-label"></span>
+            <span class="hp" aria-hidden="true"><i></i><i></i><i></i></span>
+          </div>
+          <div class="player-card__photo">
+            <!-- Pon tu foto en images/nahia.jpg. Si no existe, se muestran las iniciales -->
+            <img src="images/nahia.jpg" alt="Nahia Iglesias Calvo" onerror="this.remove()">
+            <span class="player-card__initials" aria-hidden="true">NI</span>
+          </div>
+          <div class="player-card__body">
+            <p class="player-card__name">Nahia Iglesias</p>
+            <p class="player-card__class" data-i18n="card.class">Game Developer</p>
+            <div class="player-card__stats">
+              <div><strong>+6</strong><span data-i18n="card.games">Juegos</span></div>
+              <div><strong>3</strong><span data-i18n="card.engines">Motores</span></div>
+              <div><strong>5</strong><span data-i18n="card.langs">Lenguajes</span></div>
             </div>
-
-            <!-- Juego 2 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/Ott.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#00f2fe] opacity-80 group-hover:scale-110 transition-transform duration-300"></span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"></span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">SDL</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">C++</span>
-                            <!--span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Itch.io</span-->
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">Ott: An Elemental Journey</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Juego de plataformas en 2D centrado en la exploración y la aventura, con puzles y mecánicas basadas en distintos elementos.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://github.com/UCM-FDI-DISIA/Fae-Studios.git" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Repositorio
-                    </a>
-                    <a href="https://ucm-fdi-disia.github.io/Fae-Studios/" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Página Web
-                    </a>
-                </div>
-            </div>
-            <!-- Juego 3 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/Menstruan.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#00f2fe] opacity-80 group-hover:scale-110 transition-transform duration-300"></span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"></span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Unity</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">C#</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Juego serio</span>
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">Menstruan-3</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Juego serio sobre la mentruación diseñado y desarrollado para la asociación sexológica Deslenguando.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://github.com/DavidRainder/Menstruan-3" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Repositorio
-                    </a>
-                    <a href="" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Video????
-                    </a>
-                </div>
-            </div>
-
-            <!-- Juego 4 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/ColorBlind.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#00f2fe] opacity-80 group-hover:scale-110 transition-transform duration-300"></span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"></span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Unity</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Realidad Virtual</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Simulación</span>
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">A Different Vision: A color Blindness Experience</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Experiencia inmersiva en realidad virtual que permite a los usuarios experimentar cómo percibe el mundo un niño daltónico.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://github.com/nahigles/EIRV_VR_UnityFinalProject" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Repositorio
-                    </a>
-                    <a href="https://youtu.be/rzZ2bIAG6Mw" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Video
-                    </a>
-                </div>
-            </div>
-
-            <!-- Juego 5 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/Work4.jpg');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#00f2fe] opacity-80 group-hover:scale-110 transition-transform duration-300"></span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"></span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Juego Web</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Phaser</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">JavaScript</span>
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">Work To The Top</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Juego de toma de decisiones en 2D centrado en la exploración y la interacción con personajes. Las decisiones del jugador afectan al juego y la historia trata sobre un oficinista en su trabajo.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://github.com/nahigles/Workaholote" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Repositorio
-                    </a>
-                    <a href="https://nahigles.github.io/Workaholote/" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Página Web
-                    </a>
-                </div>
-            </div>
-            <!-- Juego 6 -->
-            <div class="bg-[#0b0c10] border border-gray-900 overflow-hidden group hover:border-gray-800 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-56 bg-gray-800 relative overflow-hidden flex items-center justify-center" style="background-image: url('images/DinoSouls.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent z-10"></div>
-                        <div class="text-center p-4">
-                            <span class="font-orbitron block text-3xl font-black tracking-widest text-[#00f2fe] opacity-80 group-hover:scale-110 transition-transform duration-300"></span>
-                            <span class="text-xs uppercase tracking-widest text-gray-500"></span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">Unity</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider">C#</span>
-                            <span class="bg-gray-900 text-gray-400 text-xs px-2.5 py-1 font-semibold uppercase tracking-wider"></span>
-                        </div>
-                        <h3 class="font-orbitron text-2xl font-bold mb-2 group-hover:text-[#00f2fe] transition-colors">DinoSouls</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Juego de acción top down. La mecánica principal es utilizar distintas almas de dinosaurio para realizar ataques y descubrir que le pasó a tu aldea.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 flex gap-4">
-                    <a href="https://ne0games.itch.io/dinosouls" class="flex-1 font-orbitron text-center bg-gray-900 hover:bg-gray-800 border border-gray-800 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Itchio
-                    </a>
-                    <a href="https://youtu.be/hNkZhSmDY3E?si=E48m20x9sqBEPLXa" class="flex-1 font-orbitron text-center bg-transparent border border-[#00f2fe]/40 text-[#00f2fe] hover:bg-[#00f2fe]/10 text-sm font-bold uppercase py-2.5 transition-colors">
-                        Ver Video
-                    </a>
-                </div>
-            </div>
-        </div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- HABILIDADES TÉCNICAS -->
-    <section id="habilidades" class="py-20 bg-[#090a0f] border-y border-gray-900 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-12 text-center">
-                <h2 class="font-orbitron text-3xl md:text-4xl font-black uppercase tracking-wide">
-                    Arsenal Técnico
-                </h2>
-                <p class="text-gray-400 text-sm md:text-base mt-2">Motores gráficos, lenguajes de programación y herramientas de producción.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 bg-[#0b0c10] border border-gray-800/60">
-                    <div class="text-[#00f2fe] font-orbitron text-xl font-bold mb-3 uppercase tracking-wider border-b border-gray-800 pb-2">Motores</div>
-                    <ul class="space-y-2 text-gray-400 font-medium">
-                        <li class="flex justify-between"><span>Unreal Engine 5</span> <span class="text-[#00f2fe] text-xs">Básico</span></li>
-                        <li class="flex justify-between"><span>Unity 3D / 2D</span> <span class="text-[#00f2fe] text-xs">Avanzado</span></li>
-                        <li class="flex justify-between"><span>Phaser 3</span> <span class="text-[#00f2fe] text-xs">Intermedio</span></li>
-                    </ul>
-                </div>
-                <div class="p-6 bg-[#0b0c10] border border-gray-800/60">
-                    <div class="text-[#ff007f] font-orbitron text-xl font-bold mb-3 uppercase tracking-wider border-b border-gray-800 pb-2">Código</div>
-                    <ul class="space-y-2 text-gray-400 font-medium">
-                        <li class="flex justify-between"><span>C++</span> <span class="text-[#ff007f] text-xs">5 años</span></li>
-                        <li class="flex justify-between"><span>C#</span> <span class="text-[#ff007f] text-xs">6 años</span></li>
-                        <li class="flex justify-between"><span>Java</span> <span class="text-[#ff007f] text-xs">Básico</span></li>
-                        <li class="flex justify-between"><span>JavaScript</span> <span class="text-[#ff007f] text-xs">2 años</span></li>
-                        <li class="flex justify-between"><span>Python</span> <span class="text-[#ff007f] text-xs">3 años</span></li>
-                    </ul>
-                </div>
-                <div class="p-6 bg-[#0b0c10] border border-gray-800/60">
-                    <div class="text-[#00f2fe] font-orbitron text-xl font-bold mb-3 uppercase tracking-wider border-b border-gray-800 pb-2">Herramientas</div>
-                    <ul class="space-y-2 text-gray-400 font-medium">
-                        <li>Git / GitHub / TortoiseSVN</li>
-                        <li>Blender</li>
-                        <li>Android</li>
-                        <li>PlayStation 5</li>
-                        <li>Realidad Virtual</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Davinci Resolve</li>
-                        <li>FMOD</li>
-                        <li>Audacity</li>
-                        <li>Toon Boon</li>
-                        <li>Visual Studio</li>
-                        <li>Anaconda / Jupiter Notebook</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- ===== PROYECTO DESTACADO ===== -->
+    <section class="section" id="destacado">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="pixel-label" data-i18n="featured.kicker">★ Proyecto principal</p>
+          <h2 class="section-title" data-i18n="featured.heading">Colaboración internacional</h2>
         </div>
+
+        <article class="featured reveal">
+          <span class="featured__badge" data-i18n="featured.badge">★ TFG · Juego serio</span>
+          <div class="featured__media" data-title="Misión Colombia">
+            <img src="images/MisionColombia3.png" alt="Captura de Misión Colombia" data-i18n-attr="alt:featured.alt" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            <button class="play-btn" type="button" data-youtube="OzEE3vw6ORw">
+              <span class="play-btn__icon" data-i18n="featured.play">Ver tráiler</span>
+            </button>
+          </div>
+
+          <div class="featured__body">
+            <div>
+              <div class="tags">
+                <span class="tag">Unity 3D</span>
+                <span class="tag">C#</span>
+                <span class="tag">Python</span>
+                <span class="tag" data-i18n="tag.research">Investigación</span>
+                <span class="tag" data-i18n="tag.serious">Juego serio</span>
+              </div>
+              <h3 class="featured__title">Misión Colombia</h3>
+              <p class="featured__desc" data-i18n="featured.desc">Juego serio para entrenar la capacidad de planificación en niños y adolescentes con TDAH. El jugador planifica las rutas de un transportista en un mundo inspirado en Colombia. Diseñé y desarrollé el juego, y analicé los resultados de las pruebas realizadas con 50 niños y niñas con TDAH.</p>
+            </div>
+            <div class="featured__side">
+              <div class="stat-box">
+                <strong>50</strong>
+                <span data-i18n="featured.stat">niños y niñas con TDAH participaron en el estudio</span>
+              </div>
+              <div class="featured__actions">
+                <a class="btn btn--accent" href="https://github.com/nahigles/jsonToCsv_TFG/blob/main/MemoriaTFG/NahiaIglesiasTFG.pdf" target="_blank" rel="noopener" data-i18n="featured.tfg">Leer investigación TFG</a>
+                <a class="btn" href="https://youtu.be/OzEE3vw6ORw" target="_blank" rel="noopener" data-i18n="btn.youtube">Ver en YouTube</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="font-orbitron text-3xl md:text-4xl font-black uppercase tracking-wide mb-4">
-            ¿Listo para iniciar una nueva partida?
-        </h2>
-        <p class="text-gray-400 max-w-xl mx-auto mb-8 font-medium">
-            Estoy disponible para puestos a tiempo completo, proyectos freelance o colaboraciones de desarrollo en estudios indies o AAA.
-        </p>
-
-        <div class="inline-flex flex-col sm:flex-row justify-center items-center gap-6 p-8 bg-[#0b0c10] border border-gray-900 w-full max-w-2xl mx-auto">
-            <div class="text-center sm:text-left">
-                <span class="text-xs uppercase tracking-widest text-gray-500 font-bold block">Envíame un correo electrónico</span>
-                <a href="mailto:nayukinformatica@gmail.com" class="font-orbitron text-xl md:text-2xl text-[#00f2fe] font-bold hover:underline">
-                    nayukinformatica@gmail.com
-                </a>
-            </div>
-            <div class="h-px w-full sm:h-12 sm:w-px bg-gray-800"></div>
-            <div class="flex gap-4">
-                <a href="https://www.linkedin.com/in/nahia-iglesias-calvo-a721733b9/" class="bg-gray-900 p-3 hover:text-[#ff007f] transition-colors border border-gray-800" title="LinkedIn">LinkedIn</a>
-                <a href="https://github.com/nahigles" class="bg-gray-900 p-3 hover:text-[#00f2fe] transition-colors border border-gray-800" title="GitHub">GitHub</a>
-                <a href="https://nayuk-6.itch.io" class="bg-gray-900 p-3 hover:text-white transition-colors border border-gray-800" title="Itch.io">Itch.io</a>
-            </div>
+    <!-- ===== CUADRÍCULA DE JUEGOS ===== -->
+    <section class="section section--sand" id="juegos">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" data-i18n="games.heading">Más videojuegos</h2>
+          <p class="section-sub" data-i18n="games.sub">Títulos desarrollados de forma independiente y en equipo.</p>
         </div>
+
+        <div class="games-grid">
+          <!-- Juego: Ott -->
+          <article class="game-card reveal">
+            <div class="game-card__media" data-title="Ott">
+              <span class="game-card__index">01</span>
+              <img src="images/Ott.png" alt="Ott: An Elemental Journey" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            </div>
+            <div class="game-card__body">
+              <div class="tags"><span class="tag">SDL</span><span class="tag">C++</span><span class="tag" data-i18n="tag.platformer">Plataformas</span></div>
+              <h3 class="game-card__title">Ott: An Elemental Journey</h3>
+              <p class="game-card__desc" data-i18n="game.ott">Plataformas 2D centrado en la exploración y la aventura, con puzles y mecánicas basadas en distintos elementos.</p>
+            </div>
+            <div class="game-card__actions">
+              <a class="btn btn--sm" href="https://github.com/UCM-FDI-DISIA/Fae-Studios" target="_blank" rel="noopener" data-i18n="btn.repo">Repositorio</a>
+              <a class="btn btn--sm btn--primary" href="https://ucm-fdi-disia.github.io/Fae-Studios/" target="_blank" rel="noopener" data-i18n="btn.web">Página web</a>
+            </div>
+          </article>
+
+          <!-- Juego: Menstruan-3 -->
+          <article class="game-card reveal">
+            <div class="game-card__media" data-title="Menstruan-3">
+              <span class="game-card__index">02</span>
+              <img src="images/Menstruan.png" alt="Menstruan-3" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            </div>
+            <div class="game-card__body">
+              <div class="tags"><span class="tag">Unity 2D</span><span class="tag">C#</span><span class="tag" data-i18n="tag.serious">Juego serio</span></div>
+              <h3 class="game-card__title">Menstruan-3</h3>
+              <p class="game-card__desc" data-i18n="game.menstruan">Juego serio sobre la menstruación, diseñado y desarrollado para la asociación sexológica Deslenguando.</p>
+            </div>
+            <div class="game-card__actions">
+              <a class="btn btn--sm" href="https://github.com/DavidRainder/Menstruan-3" target="_blank" rel="noopener" data-i18n="btn.repo">Repositorio</a>
+              <!-- Cuando tengas el vídeo, añade aquí:
+              <a class="btn btn--sm btn--primary" href="URL_DEL_VIDEO" target="_blank" rel="noopener" data-i18n="btn.video">Ver vídeo</a> -->
+            </div>
+          </article>
+
+          <!-- Juego: A Different Vision -->
+          <article class="game-card reveal">
+            <div class="game-card__media" data-title="A Different Vision">
+              <span class="game-card__index">03</span>
+              <img src="images/ColorBlind.png" alt="A Different Vision" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            </div>
+            <div class="game-card__body">
+              <div class="tags"><span class="tag">Unity 3D</span><span class="tag" data-i18n="tag.vr">Realidad virtual</span><span class="tag" data-i18n="tag.sim">Simulación</span></div>
+              <h3 class="game-card__title">A Different Vision: A Color Blindness Experience</h3>
+              <p class="game-card__desc" data-i18n="game.vision">Experiencia inmersiva en realidad virtual que permite vivir cómo percibe el mundo un niño daltónico.</p>
+            </div>
+            <div class="game-card__actions">
+              <a class="btn btn--sm" href="https://github.com/nahigles/EIRV_VR_UnityFinalProject" target="_blank" rel="noopener" data-i18n="btn.repo">Repositorio</a>
+              <a class="btn btn--sm btn--primary" href="https://youtu.be/rzZ2bIAG6Mw" target="_blank" rel="noopener" data-i18n="btn.video">Ver en Youtube</a>
+            </div>
+          </article>
+
+          <!-- Juego: Work To The Top -->
+          <article class="game-card reveal">
+            <div class="game-card__media" data-title="Work To The Top">
+              <span class="game-card__index">04</span>
+              <img src="images/Work.jpg" alt="Work To The Top" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            </div>
+            <div class="game-card__body">
+              <div class="tags"><span class="tag">Phaser</span><span class="tag">JavaScript</span><span class="tag" data-i18n="tag.web">Juego web</span></div>
+              <h3 class="game-card__title">Work To The Top</h3>
+              <p class="game-card__desc" data-i18n="game.work">Juego 2D de toma de decisiones sobre un oficinista en su trabajo, centrado en la exploración y la interacción con personajes. Cada decisión cambia la historia.</p>
+            </div>
+            <div class="game-card__actions">
+              <a class="btn btn--sm" href="https://github.com/nahigles/Workaholote" target="_blank" rel="noopener" data-i18n="btn.repo">Repositorio</a>
+              <a class="btn btn--sm btn--primary" href="https://nahigles.github.io/Workaholote/" target="_blank" rel="noopener" data-i18n="btn.play">Jugar</a>
+            </div>
+          </article>
+
+          <!-- Juego: DinoSouls -->
+          <article class="game-card reveal">
+            <div class="game-card__media" data-title="DinoSouls">
+              <span class="game-card__index">05</span>
+              <img src="images/DinoSouls.png" alt="DinoSouls" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+            </div>
+            <div class="game-card__body">
+              <div class="tags"><span class="tag">Unity 2D</span><span class="tag">C#</span><span class="tag" data-i18n="tag.action">Acción</span></div>
+              <h3 class="game-card__title">DinoSouls</h3>
+              <p class="game-card__desc" data-i18n="game.dino">Acción top-down: usa distintas almas de dinosaurio para atacar y descubre qué le pasó a tu aldea.</p>
+            </div>
+            <div class="game-card__actions">
+              <a class="btn btn--sm" href="https://ne0games.itch.io/dinosouls" target="_blank" rel="noopener">itch.io</a>
+              <a class="btn btn--sm btn--primary" href="https://youtu.be/hNkZhSmDY3E" target="_blank" rel="noopener" data-i18n="btn.video">Ver vídeo</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-8 bg-[#050608] border-t border-gray-950 px-6 text-center text-xs text-gray-600 font-mono tracking-wider">
-        © 2026 NAHIA IGLESIAS PORTFOLIO. ALL RIGHTS RESERVED.
-    </footer>
+    <!-- ===== CTA ===== -->
+    <section class="cta-band">
+      <div class="container reveal">
+        <p class="pixel-label" data-i18n="cta.kicker">Press start</p>
+        <h2 data-i18n="cta.title">¿Empezamos una nueva partida?</h2>
+        <p data-i18n="cta.text">Busco mi primer puesto en un estudio de videojuegos, indie o AAA. Estoy abierta a puestos a tiempo completo, prácticas y colaboraciones.</p>
+        <div class="cta-band__actions">
+          <a class="btn" href="contact.html" data-i18n="cta.contact">Contactar</a>
+          <a class="btn" href="about.html" data-i18n="cta.about">Ver mi CV online</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span data-year>2026</span> Nahia Iglesias Calvo · <span data-i18n="footer.made"></span></p>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/nahia-iglesias-calvo-a721733b9/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/></svg></a>
+        <a href="https://github.com/nahigles" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></a>
+        <a href="https://nayuk-6.itch.io" target="_blank" rel="noopener" aria-label="itch.io" title="itch.io"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="11" rx="3"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1" fill="currentColor"/><circle cx="18" cy="14" r="1" fill="currentColor"/></svg></a>
+        <a href="mailto:nayukinformatica@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
