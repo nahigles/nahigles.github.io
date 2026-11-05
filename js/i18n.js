@@ -39,14 +39,14 @@ const I18N = {
 
     'hero.eyebrow': 'Player 1 · Jolasteko prest',
     'hero.role': 'Bideojoko garatzailea',
-    'hero.desc': 'Bideojokoak sortzen ditut, interaktibitatea hezkuntza- eta laguntza-tresna gisa erabiliz. Hainbat programazio-lengoaia eta motorrekin lan egiten dut, eta diseinu, modelatze, animazio eta soinu arloko gaitasunei esker, diziplina anitzeko taldeetan eta plataforma anitzeko proiektuetan ekarpenak egin ditzaket.',
+    'hero.desc': 'Kaixo! Nire izena Nahia da eta oso gustuko dut joko serioak eta jendeak goza ditzakeen bideojokoak sortzea :). Nire unibertsitate-karrerari esker, esperientzia daukat bideojokoak garatzeko hainbat teknologia eta programazio-lengoaiatan.',
     'card.class': 'Game Developer',
     'card.games': 'Jokoak',
     'card.engines': 'Motorrak',
     'card.langs': 'Lengoaiak',
 
     'featured.kicker': '★ Proiektu nagusia',
-    'featured.heading': 'Misioa desblokeatuta',
+    'featured.heading': 'Nazioarteko kolaborazioa',
     'featured.badge': '★ GrAL · Joko serioa',
     'featured.alt': 'Misión Colombia jokoaren pantaila-argazkia',
     'featured.play': 'Trailerra ikusi',
@@ -62,7 +62,7 @@ const I18N = {
     'tag.web': 'Web jokoa',
     'tag.action': 'Ekintza',
 
-    'games.heading': 'Maila hautatu',
+    'games.heading': 'Bideojoko gehiago',
     'games.sub': 'Bakarka eta taldean garatutako tituluak.',
     'game.ott': '2D plataforma-jokoa, esplorazioan eta abenturan oinarritua, puzzleekin eta elementuetan oinarritutako mekanikekin.',
     'game.menstruan': 'Hilekoari buruzko joko serioa, Deslenguando elkarte sexologikoarentzat diseinatu eta garatua.',
@@ -71,7 +71,7 @@ const I18N = {
     'game.dino': 'Goitik beherako ekintza-jokoa: erabili dinosauro-arima desberdinak erasotzeko eta jakin zure herrixkari zer gertatu zitzaion.',
 
     'cta.kicker': 'Press start',
-    'cta.title': 'Partida berri bat hasiko dugu?',
+    'cta.title': 'Jarri nirekin harremanetan',
     'cta.text': 'Bideojoko-estudio batean nire lehen lanpostuaren bila nabil, indie zein AAA. Lanaldi osoko lanpostuetarako, praktiketarako eta lankidetzetarako prest nago.',
     'cta.contact': 'Harremanetan jarri',
     'cta.about': 'Nire CVa online',
@@ -172,14 +172,14 @@ const I18N = {
 
     'hero.eyebrow': 'Player 1 · Ready to play',
     'hero.role': 'Video game developer',
-    'hero.desc': 'I make video games that use interactivity as a tool for education and support. I work across several programming languages and engines, and my skills in design, modelling, animation and sound let me contribute to multidisciplinary teams and cross-platform projects.',
+    'hero.desc': 'Hi! My name is Nahia, and I love creating serious games and video games that people can enjoy :). Thanks to my university studies, I have experience with various technologies and programming languages ​​used in video game development.',
     'card.class': 'Game Developer',
     'card.games': 'Games',
     'card.engines': 'Engines',
     'card.langs': 'Languages',
 
     'featured.kicker': '★ Main project',
-    'featured.heading': 'Mission unlocked',
+    'featured.heading': 'International collaboration',
     'featured.badge': '★ Thesis · Serious game',
     'featured.alt': 'Screenshot of Misión Colombia',
     'featured.play': 'Watch trailer',
@@ -195,7 +195,7 @@ const I18N = {
     'tag.web': 'Web game',
     'tag.action': 'Action',
 
-    'games.heading': 'Level select',
+    'games.heading': 'More video games',
     'games.sub': 'Titles developed solo and in teams.',
     'game.ott': 'A 2D platformer focused on exploration and adventure, with puzzles and element-based mechanics.',
     'game.menstruan': 'A serious game about menstruation, designed and developed for the sexology association Deslenguando.',
@@ -204,7 +204,7 @@ const I18N = {
     'game.dino': 'Top-down action: use different dinosaur souls to attack and find out what happened to your village.',
 
     'cta.kicker': 'Press start',
-    'cta.title': 'Ready for a new game?',
+    'cta.title': 'Contact me',
     'cta.text': 'I\'m looking for my first role at a game studio, indie or AAA. Open to full-time positions, internships and collaborations.',
     'cta.contact': 'Get in touch',
     'cta.about': 'See my CV online',
