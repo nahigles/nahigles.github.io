@@ -129,7 +129,6 @@ const I18N = {
     'skills.engines': 'Motorrak',
     'skills.code': 'Kodea',
 
-    'contact.kicker': 'Player 2, batzen zara?',
     'contact.title': 'Kontaktua',
     'contact.intro': 'Lanpostu bat, proiektu bat duzu edo nire lanari buruz gehiago jakin nahi duzu? Idatzi iezadazu eta lehenbailehen erantzungo dizut.',
     'contact.available': 'Lan egiteko prest',
@@ -264,7 +263,6 @@ const I18N = {
     'skills.engines': 'Engines',
     'skills.code': 'Code',
 
-    'contact.kicker': 'Player 2, joining in?',
     'contact.title': 'Contact',
     'contact.intro': 'Got an opening, a project, or want to know more about my work? Drop me a line and I\'ll get back to you as soon as I can.',
     'contact.available': 'Available for work',
