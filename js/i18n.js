@@ -141,10 +141,10 @@ const I18N = {
     'contact.itch': 'Jolastu nire jokoetara',
 
     'form.title': 'Bidali mezu bat',
-    'form.sub': 'Bete formularioa eta zure posta irekiko da, mezua bidaltzeko prest.',
+    'form.sub': 'Bete formularioa eta zure posta elektronikoa irekiko da, mezua bidaltzeko prest.',
     'form.name': 'Izena',
     'form.company': 'Enpresa / estudioa',
-    'form.email': 'Zure posta',
+    'form.email': 'Zure helbide elektronikoa',
     'form.message': 'Mezua',
     'form.send': 'Mezua bidali',
 
