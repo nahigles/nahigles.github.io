@@ -60,7 +60,7 @@ const I18N = {
     'tag.vr': 'Errealitate birtuala',
     'tag.sim': 'Simulazioa',
     'tag.web': 'Web jokoa',
-    'tag.action': 'Ekintza',
+    'tag.action': 'Akzioa',
 
     'games.heading': 'Bideojoko gehiago',
     'games.sub': 'Bakarka eta taldean garatutako tituluak.',
@@ -68,7 +68,7 @@ const I18N = {
     'game.menstruan': 'Hilekoari buruzko joko serioa, Deslenguando elkarte sexologikoarentzat diseinatu eta garatua.',
     'game.vision': 'Errealitate birtualeko esperientzia murgiltzailea, haur daltoniko batek mundua nola ikusten duen bizitzeko aukera ematen duena.',
     'game.work': 'Bulegari baten lanari buruzko 2D erabaki-jokoa, esplorazioan eta pertsonaiekiko elkarreraginean oinarritua. Erabaki bakoitzak istorioa aldatzen du.',
-    'game.dino': 'Goitik beherako ekintza-jokoa: erabili dinosauro-arima desberdinak erasotzeko eta jakin zure herrixkari zer gertatu zitzaion.',
+    'game.dino': 'Top-down akzio-jokoa: erabili dinosauro-arima desberdinak erasotzeko eta jakin zure herrixkari zer gertatu zitzaion.',
 
     'cta.kicker': 'Press start',
     'cta.title': 'Jarri nirekin harremanetan',
@@ -201,7 +201,7 @@ const I18N = {
     'game.menstruan': 'A serious game about menstruation, designed and developed for the sexology association Deslenguando.',
     'game.vision': 'An immersive virtual reality experience that lets you see the world the way a colour-blind child does.',
     'game.work': 'A 2D decision-making game about an office worker, focused on exploration and talking to characters. Every choice changes the story.',
-    'game.dino': 'Top-down action: use different dinosaur souls to attack and find out what happened to your village.',
+    'game.dino': 'Top-down action game: use different dinosaur souls to attack and find out what happened to your village.',
 
     'cta.kicker': 'Press start',
     'cta.title': 'Contact me',
