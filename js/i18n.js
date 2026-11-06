@@ -121,7 +121,7 @@ const I18N = {
     'exp.teamTitle1': 'IKERKETAKO LAGUNTZAILEA',
     'exp.teamPlace':'Kolaborazioa ACEMATErekin, haurren inpultsibitatearekin lotutako buru-nahasteak kudeatzeko aliantza zientifikoa',
     'exp.teamPlace1':'Praktikak enpresan Universidad Complutense de Madrid-eko Natural Interaction based on Language (NIL) ikerketa taldearekin',
-    'exp.teamPlace2':'Colaboración con Deslenguando, asociación dedicada a la divulgación de la sexología',
+    'exp.teamPlace2':'Kolaborazioa Deslenguandorekin, sexologiaren dibulgazioan aritzen den elkartea',
     'exp.team1': 'Garatutako titulua: Misión Colombia',
     'exp.team2': 'Garatutako titulua: El salto el delfín',
     'exp.team3': 'Garatutako titulua: Menstruan-3',
